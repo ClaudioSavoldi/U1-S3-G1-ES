@@ -225,12 +225,14 @@ console.log("tutti i film", movies);
 const film2000 = (film) => film.filter((f) => parseInt(f.Year) >= 2000);
 console.log("i film post-2000 sono", film2000(movies));
 
+console.log("--------------------------------------------------------ES13");
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
 const sumYears = (film) => film.reduce((acc, curr) => acc + parseInt(curr.Year), 0);
-console.log(sumYears(movies));
+console.log("la somma degli anni", sumYears(movies));
+
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
